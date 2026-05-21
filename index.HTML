@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Verde - Agrinho 2026</title>
+    <!-- Vinculação do CSS externo na pasta correta -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- BARRA DE ACESSIBILIDADE E ACESSOS RÁPIDOS -->
+    <div class="accessibility-bar">
+        <div class="acc-controls">
+            <button id="btn-theme" title="Alternar Modo Escuro">🌓 Modo Escuro</button>
+            <button id="btn-font-up" title="Aumentar Fonte">A+</button>
+            <button id="btn-font-down" title="Diminuir Fonte">A-</button>
+        </div>
+        <!-- Saudação dinâmica manipulada pelo JS -->
+        <div id="user-greeting" class="greeting-text">Bem-vindo ao nosso portal!</div>
+    </div>
+
+    <!-- MENU DE NAVEGAÇÃO SEMÂNTICO -->
+    <header>
+        <a href="#" class="logo-brand">Conexão<span>Verde</span></a>
+        <nav>
+            <a href="#proposta" class="nav-link">Nossa Proposta</a>
+            <a href="#calculadora" class="nav-link">Simulador de Impacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO BANNER COM IDENTIDADE VISUAL PRÓPRIA -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Economia Verde e Descarbonização no Campo</h1>
+            <p>Descubra como o agronegócio moderno atua como o maior aliado do clima através do sequestro de carbono e práticas limpas.</p>
+            <a href="#calculadora" class="btn-primary">Calcule Suas Emissões</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTEÚDO AUTORAL -->
+    <main id="proposta">
+        <h2 class="section-title">Os Três Pilares do Agro Descarbonizado</h2>
+        
+        <div class="grid-container">
+            <!-- Card 1 -->
+            <article class="info-card" id="card-sequestro">
+                <div class="card-icon">🌱</div>
+                <h3>Sequestro de Carbono</h3>
+                <p>O solo vivo e bem manejado retém os gases poluentes da atmosfera. Técnicas como o plantio direto transformam as lavouras em verdadeiras esponjas de CO₂, limpando o ar de forma natural.</p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="info-card" id="card-mercado">
+                <div class="card-icon">💰</div>
+                <h3>Mercado Verde</h3>
+                <p>Preservar a natureza agora gera renda direta. Produtores rurais que mantêm florestas em pé e adotam manejo sustentável podem vender créditos de carbono para empresas globais.</p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="info-card" id="card-bioenergia">
+                <div class="card-icon">⚡</div>
+                <h3>Bioenergia Rural</h3>
+                <p>Nada se perde no campo moderno. Os resíduos de colheitas e dejetos de animais são transformados em biogás e biomassa, substituindo os combustíveis fósseis por energia limpa.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- SEÇÃO INTERATIVA COM FORMULÁRIO -->
+    <section id="calculadora" class="calc-section">
+        <div class="calc-wrapper">
+            <h2 class="calc-title">Simulador Ecológico Agro</h2>
+            <p class="calc-subtitle">Descubra o impacto das emissões de combustível da sua frota rural e veja a solução prática.</p>
+            
+            <!-- Formulário Semântico -->
+            <form id="eco-form" onsubmit="event.preventDefault();">
+                <div class="input-group">
+                    <label for="user-name">Qual é o seu nome?</label>
+                    <input type="text" id="user-name" placeholder="Digite seu nome para personalizar" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="diesel-input">Consumo estimado de Óleo Diesel (Litros por mês):</label>
+                    <input type="number" id="diesel-input" min="1" placeholder="Ex: 800" required>
+                </div>
+
+                <button type="button" id="btn-calculate">Analisar Impacto Ambiental</button>
+            </form>
+
+            <!-- Div manipulada pelo JS (Escondida por padrão) -->
+            <div id="calc-result" class="result-box">
+                <h3>Análise Concluída para <span id="res-name"></span>!</h3>
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <span class="metric-label">Emissão Mensal:</span>
+                        <span id="res-co2" class="metric-value">0</span> <small>kg de CO₂</small>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">Compensação Necessária:</span>
+                        <span id="res-trees" class="metric-value">0</span> <small>Árvores/ano</small>
+                    </div>
+                </div>
+                <p class="eco-tip"><strong>Dica Verde:</strong> A implementação do sistema de Integração Lavoura-Pecuária-Floresta (ILPF) pode neutralizar completamente este impacto!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ SEMÂNTICO -->
+    <footer>
+        <p>&copy; 2026 Conexão Verde - Projeto Pedagógico Agrinho. Conteúdo 100% Autoral.</p>
+    </footer>
+
+    <!-- Vinculação do JS externo no final do corpo -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
