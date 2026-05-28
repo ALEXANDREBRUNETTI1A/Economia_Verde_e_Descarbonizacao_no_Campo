@@ -1,0 +1,19 @@
+# Conexão Verde - Economia Verde e Descarbonização no Campo
+
+## 🌿 Objetivo do Tema (Concurso Agrinho)
+Este projeto foi desenvolvido como material pedagógico alinhado às diretrizes do concurso **Agrinho**. O objetivo central é demonstrar de forma clara, interativa e visual como o agronegócio moderno desempenha um papel fundamental no equilíbrio ambiental. Focando no subtema **"Economia Verde e Descarbonização"**, a aplicação ensina conceitos sobre sequestro de carbono nas plantações, mercado de créditos verdes e bioenergia, além de fornecer uma ferramenta interativa para simular e conscientizar sobre emissões de gases e mitigação de impactos no campo.
+
+## 🛠️ Tecnologias Utilizadas
+- **HTML5:** Estruturação semântica do conteúdo (tags como `main`, `section`, `article`, `form`).
+- **CSS3:** Estilização com layout moderno utilizando **Flexbox** e **Grid**, gerenciamento de estados com variáveis CSS (`:root`) e responsividade total via **Media Queries**.
+- **JavaScript (Vanilla):** Lógica interativa, processamento de dados matemáticos de emissões e manipulação em tempo real do DOM.
+
+## 🎨 Identidade Visual e Mídias
+- **Paleta de Cores:** Desenvolvida especificamente em tons de verde folha (`#2d6a4f`) e terra profunda para fugir de layouts genéricos industriais, gerando identificação imediata com a natureza e o agronegócio sustentável.
+- **Customização de Recursos:** As fontes e tamanhos de elementos foram ajustados manualmente para garantir que a transição entre temas e escalas ocorra sem nenhuma falha de renderização.
+
+## 🚀 Instruções de Uso
+1. Transfira a pasta do projeto completa para o seu computador respeitando a hierarquia de arquivos (`assets/css/` e `assets/js/`).
+2. Dê um duplo clique no arquivo `index.html` para executá-lo diretamente em qualquer navegador moderno.
+3. Use a barra superior para testar as **Melhorias de Usuário** (Modo Escuro e botões `A+` / `A-` de acessibilidade).
+4. No formulário do Simulador Ecológico, digite seu nome e simule um volume de combustível (ex: 500 litros) para ver o cálculo dinâmico de pegada de carbono e árvores necessárias para neutralização funcionar instantaneamente.
