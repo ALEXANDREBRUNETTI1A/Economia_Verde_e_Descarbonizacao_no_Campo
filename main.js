@@ -1,6 +1,3 @@
-javascript
-
-
 // Aguarda o carregamento total do DOM para prevenir erros de execução
 document.addEventListener('DOMContentLoaded', () => {
 
